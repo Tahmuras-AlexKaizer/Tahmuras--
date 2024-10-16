@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
@@ -159,7 +162,6 @@ body {
 .txt-1 {
   color: white;
   padding-right: 25px;
-  
 }
 .cf-txt-1 {
   color: white;
@@ -524,7 +526,7 @@ body {
 }
 .description {
   gap: 1vw;
-justify-content: center;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
 }
@@ -637,7 +639,6 @@ justify-content: center;
 }
 @media (max-width: 900px) {
   .img-map {
-
     margin-top: 1vh;
     margin-left: -1vw;
   }
@@ -653,7 +654,6 @@ justify-content: center;
   margin-top: -7vw;
   width: 25vw;
   height: 50vh;
-
 }
 
 @media (max-width: 900px) {
@@ -680,10 +680,9 @@ justify-content: center;
   height: 20vh;
   display: flex;
   justify-content: center;
-
 }
 @media (max-width: 900px) {
   .final-final {
-margin-top: 100vh;
+    margin-top: 100vh;
   }
 }
