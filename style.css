@@ -524,7 +524,7 @@ body {
 }
 .description {
   gap: 1vw;
-  justify-content: center;
+justify-content: center;
   display: flex;
   flex-wrap: wrap;
 }
@@ -626,15 +626,18 @@ body {
   width: 75vh;
   margin-left: 15vw;
 }
+.map {
+  display: flex;
+  justify-content: center;
+}
 .img-map {
-  margin-left: 13vw;
-  margin-top: -15vh;
+  margin-left: 14vw;
+  margin-top: -17vh;
+  border-radius: 30px;
 }
 @media (max-width: 900px) {
   .img-map {
-    width: 450px;
-    display: flex;
-    justify-content: center;
+
     margin-top: 1vh;
     margin-left: -1vw;
   }
