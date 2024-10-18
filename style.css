@@ -279,9 +279,15 @@ body {
     display: none;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .txt-2 {
-    margin-top: -20vh;
+    margin-top: -7vh;
+  }
+}
+@media (max-width: 400px) {
+  .txt-2 {
+    margin-top: -7vh;
+font-size: large;
   }
 }
 @media (max-width: 900px) {
@@ -294,6 +300,12 @@ body {
     display: block;
   }
 }
+@media (max-width: 400px) {
+  .txt-6 {
+    font-size: small;
+    margin-top: 5vh;
+  }
+}
 @media (max-width: 900px) {
   .phone {
     display: block;
@@ -303,7 +315,6 @@ body {
   .products {
     overflow-x: scroll;
     flex-wrap: nowrap;
-    justify-content: start;
   }
 }
 .manufacturers {
@@ -365,7 +376,19 @@ body {
   width: 90%;
   height: 25vh;
 }
-
+.secret-button {
+  width:90vw ;
+  height: 8vh;
+  border-radius: 60px;
+  border: solid #f7752a ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.svg-big {
+  width:302 ;
+  height:330 ;
+}
 .secret-button-2 {
   position: absolute;
   z-index: 6;
@@ -383,10 +406,18 @@ body {
   background-color: #f7752a;
   color: white;
 }
+.for-laptop  {
+  display: flex;
+}
 @media (max-width: 900px) {
   .secret-button-2 {
     display: flex;
     margin-top: 5vh;
+  }
+}
+@media (max-width: 900px) {
+  .for-laptop {
+display: none;
   }
 }
 @media (max-width: 900px) {
