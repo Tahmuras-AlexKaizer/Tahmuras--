@@ -197,7 +197,7 @@ body {
   background-color: #f7752a;
   border-radius: 36px;
   position: absolute;
-  border: 10px;
+  border: 3px solid #f7752a;
   z-index: 5;
   margin-top: 80vh;
   margin-left: 5vw;
@@ -208,7 +208,8 @@ body {
   color: white;
 }
 .active-for-b2 :active {
-  background-color: #f7492a;
+  background-color: white;
+  color: #f7752a;
 }
 .cf-svg-1 :active {
   fill: white;
@@ -231,16 +232,84 @@ body {
   gap: 10px;
 }
 
-.burger {
-  display: flex;
-  position: absolute;
-  z-index: 3;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.burger-menu {
+  position: relative;
   display: none;
 }
-.cf-burger {
-  margin-left: -90vw;
-  margin-top: -4vh;
+
+.menu-checkbox {
+  display: none;
 }
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  width: 30px;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+  gap: 5px;
+}
+
+.menu-icon span {
+  background-color: white;
+  height: 3px;
+  width: 100%;
+  transition: 0.4s;
+  border-radius: 2px;
+}
+
+.menu {
+  position: absolute;
+  top: 50px;
+
+  background-color: #f7752a;
+  width: 200px;
+  display: none;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.menu a {
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.menu a:hover {
+  background-color: white;
+  color: #f7752a;
+}
+
+.menu-checkbox:checked + .menu-icon span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-checkbox:checked + .menu-icon span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-checkbox:checked + .menu-icon span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.menu-checkbox:checked ~ .menu {
+  display: flex;
+}
+
+@media (max-width: 900px) {
+  .burger-menu {
+    display: block;
+  }
+}
+
 .phone {
   margin-left: 80vw;
   position: absolute;
@@ -323,12 +392,16 @@ body {
 @media (max-width: 900px) {
   .products {
     overflow-x: scroll;
+    scroll-behavior: smooth; 
+    white-space: nowrap;
     flex-wrap: nowrap;
     justify-content: unset;
   }
 }
 .manufacturers {
   overflow-x: scroll;
+  scroll-behavior: smooth; 
+  white-space: nowrap;
   margin-top: -10vh;
   width: 100%;
   height: 20vh;
@@ -344,7 +417,6 @@ body {
 .secret-button-1 {
   position: absolute;
   display: none;
-
 }
 .secret-button-1 :active {
   background-color: #f7752a;
@@ -361,10 +433,11 @@ body {
     display: flex;
 
     margin-top: 3vh;
-      color: #f7752a;
+    color: #f7752a;
   }
 }
 .button-3-cf {
+  margin-top: 3vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -393,7 +466,7 @@ body {
 @media (max-width: 900px) {
   .button-3 {
     width: 90vw;
-    height: 85px;
+    height: 10vh;
   }
 }
 .txt-3 {
@@ -421,7 +494,7 @@ body {
   width: 90%;
   height: 25vh;
 }
- 
+
 .secret-button {
   width: 90vw;
   height: 8vh;
@@ -699,6 +772,8 @@ body {
   height: auto;
   gap: 30px;
   display: flex;
+  scroll-behavior: smooth; 
+  white-space: nowrap;
   overflow-x: scroll;
 }
 .page-8 {
@@ -719,7 +794,7 @@ body {
   border-radius: 50px;
   border: 2px solid #f7752a;
   background-color: white;
-  color:#f7752a ;
+  color: #f7752a;
 }
 .button-5-active :active {
   background-color: #f7752a;
