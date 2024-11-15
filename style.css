@@ -13,6 +13,7 @@ body {
   position: absolute;
 }
 .content-for-img {
+  border-image: fill 0 linear-gradient(#14141420, #14141480);
   background-position: center;
   position: absolute;
   z-index: 0;
@@ -36,6 +37,7 @@ body {
 }
 .search {
   z-index: 0;
+
   background-color: #fefeff1a;
   border-color: gray;
   border-radius: 28px;
@@ -216,9 +218,10 @@ body {
 }
 
 .page-2 {
+  justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
   display: flex;
-  justify-content: center;
 }
 .structure {
   width: 100%;
@@ -229,7 +232,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
 }
 
 body {
@@ -289,7 +292,7 @@ body {
 }
 
 .menu-checkbox:checked + .menu-icon span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(5px, 6px);
 }
 
 .menu-checkbox:checked + .menu-icon span:nth-child(2) {
@@ -297,7 +300,7 @@ body {
 }
 
 .menu-checkbox:checked + .menu-icon span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
+  transform: rotate(-45deg) translate(5px, -6px);
 }
 
 .menu-checkbox:checked ~ .menu {
@@ -392,7 +395,7 @@ body {
 @media (max-width: 900px) {
   .products {
     overflow-x: scroll;
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
     white-space: nowrap;
     flex-wrap: nowrap;
     justify-content: unset;
@@ -400,9 +403,9 @@ body {
 }
 .manufacturers {
   overflow-x: scroll;
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
   white-space: nowrap;
-  margin-top: -10vh;
+  margin-top: 5vw;
   width: 100%;
   height: 20vh;
   display: flex;
@@ -445,7 +448,22 @@ body {
   height: 10vh;
   border-radius: 50px;
 }
+.button-30-cf {
+  margin-top: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  height: 10vh;
+  border-radius: 50px;
+}
 .button-3-cf :active {
+  background-color: #f7752a;
+  color: white;
+  fill: white;
+  border-radius: 50px;
+}
+.button-30-cf :active {
   background-color: #f7752a;
   color: white;
   fill: white;
@@ -463,8 +481,27 @@ body {
   width: 40vw;
   height: 10vh;
 }
+.button-30 {
+  display: none;
+  border-radius: 50px;
+  border: 2px solid #f7752a;
+  background-color: white;
+  color: #f7752a;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  height: 10vh;
+}
 @media (max-width: 900px) {
   .button-3 {
+    width: 90vw;
+    height: 10vh;
+  }
+}
+@media (max-width: 900px) {
+  .button-30 {
+    display: flex;
     width: 90vw;
     height: 10vh;
   }
@@ -478,6 +515,12 @@ body {
   }
 }
 .cf-button-3 {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+}
+.cf-button-30 {
   width: 100%;
   height: 20vh;
   display: flex;
@@ -633,7 +676,7 @@ body {
 }
 .big-button {
   width: 70vw;
-  height: 70vh;
+  height: 80vh;
   border: 2px solid #f7752a;
   border-radius: 24px;
 }
@@ -664,13 +707,24 @@ body {
     margin-left: 3vw;
   }
 }
+.madie-for-h1 {
+  position: absolute;
+  z-index: 6;
+  margin-top: -15vh;
+  padding-left: 5vw;
+}
+@media (max-width: 900px) {
+  .madie-for-h1 {
+    margin-top: 0vh;
+  }
+}
 .button-Получить-коснультацию {
   width: 90%;
   height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3vh;
+  margin-top: 5vh;
   border-radius: 50px;
   background-color: #f7752a;
   border: 2px solid #f7752a;
@@ -723,7 +777,7 @@ body {
 }
 .big-button-2 {
   width: 50vw;
-  height: 50vh;
+  height: 60vh;
   border-radius: 24px;
   border: 2px solid #f7752a;
 }
@@ -738,8 +792,10 @@ body {
   height: 60px;
   border-radius: 38px;
   border: 1px solid gray;
-  margin-left: 30px;
+  margin-left: 25px;
   margin-top: 20px;
+  display: flex;
+  align-items: center;
 }
 @media (max-width: 900px) {
   .txt-5 {
@@ -772,7 +828,7 @@ body {
   height: auto;
   gap: 30px;
   display: flex;
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
   white-space: nowrap;
   overflow-x: scroll;
 }
@@ -881,6 +937,7 @@ body {
 .contacts-5 {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
 }
 .final-final {
   width: 90%;
